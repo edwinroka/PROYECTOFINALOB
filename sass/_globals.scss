@@ -123,3 +123,47 @@ body {
         }
     }
 }
+
+.sec-onboarding {
+    padding: 5rem;
+    .intro {
+        @extend .sec-feacture, .intro;
+
+    }   
+    .steps {
+        padding: 0 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        .step-separator {
+            flex: 1;
+            border-top: 2px solid #ddd;
+            margin: 0 1rem;
+        }
+
+    }
+    
+}
+
+.sec-footer-cta {
+
+    padding: 5rem;
+    background-color: components.$color-footer;
+    background-image: url(../assets/img/earn.webp);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    
+    .footer-cta {
+            width: 50%;
+        
+            .cta-title {
+            font-size: 2rem;
+                    }
+        
+                    .cta-description {
+            font-size: 1.1rem;
+                        }
+                }
+
+}
