@@ -98,6 +98,10 @@
 }
 
 /** sass --watch input.scss output.css  */
+html {
+  min-width: 100vw;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -134,13 +138,19 @@ body {
   width: 20rem;
   font-size: 3rem;
 }
+.sec-home .home-cta .home-description {
+  width: 300px;
+}
+.sec-home .home-cta .lead-magnet .input-col {
+  max-width: 200px;
+}
 
 .sec-feacture, .sec-onboarding .intro, .sec-benefits .intro {
+  display: flex;
   width: 100%;
   max-width: 1000px;
   margin: auto;
   padding: 3rem;
-  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -241,4 +251,34 @@ body {
 }
 .sec-footer-cta .footer-cta .cta-description {
   font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .sec-onboarding .intro {
+    padding: 0;
+    text-align: center;
+  }
+  .sec-onboarding .steps {
+    flex-direction: column;
+  }
+  .sec-onboarding .steps .icon-desc .title {
+    text-align: center;
+  }
+  .sec-benefits .intro {
+    width: 100%;
+  }
+  .sec-benefits .intro h3 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .sec-benefits .intro p {
+    text-align: center;
+  }
+  .sec-footer-cta {
+    background-image: none;
+  }
+  .sec-footer-cta .footer-cta {
+    width: 100%;
+    text-align: center;
+  }
 }/*# sourceMappingURL=index.css.map */
